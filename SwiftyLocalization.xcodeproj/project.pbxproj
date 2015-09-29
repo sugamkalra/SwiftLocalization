@@ -14,6 +14,7 @@
 		15D8AA721BAC53B50008C884 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D8AA711BAC53B50008C884 /* Images.xcassets */; };
 		15D8AA751BAC53B50008C884 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D8AA731BAC53B50008C884 /* LaunchScreen.xib */; };
 		15D8AA811BAC53B50008C884 /* SwiftyLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D8AA801BAC53B50008C884 /* SwiftyLocalizationTests.swift */; };
+		15D8AA971BAC59FD0008C884 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15D8AA991BAC59FD0008C884 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,13 @@
 		15D8AA7A1BAC53B50008C884 /* SwiftyLocalizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLocalizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15D8AA7F1BAC53B50008C884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15D8AA801BAC53B50008C884 /* SwiftyLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLocalizationTests.swift; sourceTree = "<group>"; };
+		15D8AA8A1BAC53F00008C884 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		15D8AA8B1BAC53F00008C884 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		15D8AA8C1BAC53FB0008C884 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		15D8AA8D1BAC53FB0008C884 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		15D8AA981BAC59FD0008C884 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		15D8AA9A1BAC59FE0008C884 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		15D8AA9B1BAC59FF0008C884 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 				15D8AA731BAC53B50008C884 /* LaunchScreen.xib */,
 				15D8AA691BAC53B50008C884 /* SwiftyLocalization.xcdatamodeld */,
 				15D8AA651BAC53B40008C884 /* Supporting Files */,
+				15D8AA991BAC59FD0008C884 /* Localizable.strings */,
 			);
 			path = SwiftyLocalization;
 			sourceTree = "<group>";
@@ -159,6 +168,8 @@
 		15D8AA5A1BAC53B40008C884 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Sugam Kalra";
 				TargetAttributes = {
@@ -178,6 +189,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
+				es,
 			);
 			mainGroup = 15D8AA591BAC53B40008C884;
 			productRefGroup = 15D8AA631BAC53B40008C884 /* Products */;
@@ -196,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D8AA701BAC53B50008C884 /* Main.storyboard in Resources */,
+				15D8AA971BAC59FD0008C884 /* Localizable.strings in Resources */,
 				15D8AA751BAC53B50008C884 /* LaunchScreen.xib in Resources */,
 				15D8AA721BAC53B50008C884 /* Images.xcassets in Resources */,
 			);
@@ -244,6 +258,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				15D8AA6F1BAC53B50008C884 /* Base */,
+				15D8AA8A1BAC53F00008C884 /* ja */,
+				15D8AA8C1BAC53FB0008C884 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -252,8 +268,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				15D8AA741BAC53B50008C884 /* Base */,
+				15D8AA8B1BAC53F00008C884 /* ja */,
+				15D8AA8D1BAC53FB0008C884 /* es */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		15D8AA991BAC59FD0008C884 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15D8AA981BAC59FD0008C884 /* en */,
+				15D8AA9A1BAC59FE0008C884 /* ja */,
+				15D8AA9B1BAC59FF0008C884 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,6 +441,7 @@
 				15D8AA861BAC53B50008C884 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15D8AA871BAC53B50008C884 /* Build configuration list for PBXNativeTarget "SwiftyLocalizationTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +450,7 @@
 				15D8AA891BAC53B50008C884 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

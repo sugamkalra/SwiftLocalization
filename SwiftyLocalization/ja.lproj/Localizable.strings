@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  SwiftyLocalization
+
+  Created by Sugam Kalra on 18/09/15.
+  Copyright (c) 2015 Sugam Kalra. All rights reserved.
+*/
+
+
+"SWIFTY_DEMO_APP" = "ペテンデモアプリケーション";
+"TEXT_CONVERSION" = "テキスト変換";
+"TEXT_CONVERTED" = "テキスト変換";
+"OK" = "Ok";

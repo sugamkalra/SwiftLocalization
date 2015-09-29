@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SwiftyLocalization" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +16,54 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EM-Z6-lPC">
+                                <rect key="frame" x="200" y="176" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Xvo-DU-cPo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eic-pI-W2O">
+                                <rect key="frame" x="200" y="289" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.71764705880000002" green="0.6588235294" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTextConvertedPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mSp-Iy-KOI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYi-Cc-TpH">
+                                <rect key="frame" x="181" y="63" width="238" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QOV-fi-hde"/>
+                                    <constraint firstAttribute="width" constant="238" id="z2b-8K-cpK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YYi-Cc-TpH" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Qel-9p-YRf"/>
+                            <constraint firstItem="eic-pI-W2O" firstAttribute="top" secondItem="2EM-Z6-lPC" secondAttribute="bottom" constant="92" id="UpL-ck-Mp0"/>
+                            <constraint firstItem="eic-pI-W2O" firstAttribute="trailing" secondItem="2EM-Z6-lPC" secondAttribute="trailing" id="Wpj-pF-5WA"/>
+                            <constraint firstItem="2EM-Z6-lPC" firstAttribute="leading" secondItem="eic-pI-W2O" secondAttribute="leading" id="cd8-WG-k0o"/>
+                            <constraint firstItem="YYi-Cc-TpH" firstAttribute="centerX" secondItem="2EM-Z6-lPC" secondAttribute="centerX" id="mMB-cf-le1"/>
+                            <constraint firstItem="YYi-Cc-TpH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="43" id="wlm-Hn-XjF"/>
+                            <constraint firstItem="2EM-Z6-lPC" firstAttribute="top" secondItem="YYi-Cc-TpH" secondAttribute="bottom" constant="92" id="zXp-e0-KSW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnTextConverted" destination="eic-pI-W2O" id="vdZ-Wx-Fbm"/>
+                        <outlet property="lblSwiftyDemo" destination="YYi-Cc-TpH" id="sAH-aO-iQw"/>
+                        <outlet property="lblTextConversion" destination="2EM-Z6-lPC" id="07V-z2-yhI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
